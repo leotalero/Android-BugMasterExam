@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:key="@string/pref_key_reminder"
+        android:title="@string/title_reminder"
+        android:summary="@string/summary_reminder"
+        android:defaultValue="false" />
+
+    <ListPreference
+        android:key="@string/pref_key_alarm"
+        android:title="@string/title_alarm"
+        android:summary="@string/summary_alarm"
+        android:entries="@array/alarm_entries"
+        android:entryValues="@array/alarm_values"
+        android:defaultValue="12:00"
+        android:dependency="@string/pref_key_reminder"/>
+
+</PreferenceScreen>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.google.developer.bugmaster.InsectDetailsActivity"
+    tools:showIn="@layout/activity_detail_activity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/text_margin">
+        <TextView
+            android:id="@+id/class_insect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Classification "
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="20dp"
+
+
+            />
+        <TextView
+            android:id="@+id/ad_insect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/detail_danger"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+
+            android:layout_below="@+id/class_insect"
+            />
+        <RatingBar
+            android:id="@+id/danger_insect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ad_insect"
+            android:progressDrawable="@drawable/bug_danger"
+            android:isIndicator="true"
+            android:rating="3"
+            android:numStars="10"
+            android:stepSize="1"
+
+            />
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>
