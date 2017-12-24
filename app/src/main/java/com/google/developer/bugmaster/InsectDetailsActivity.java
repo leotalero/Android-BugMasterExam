@@ -4,22 +4,16 @@ import android.content.Intent;
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.media.Image;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
-import com.google.developer.bugmaster.data.BugsContract;
 import com.google.developer.bugmaster.data.Insect;
-import com.google.developer.bugmaster.data.InsectRecyclerAdapter;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.ArrayList;
 
 public class InsectDetailsActivity extends AppCompatActivity {
 

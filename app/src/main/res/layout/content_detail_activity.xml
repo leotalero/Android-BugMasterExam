@@ -27,13 +27,22 @@
 
             />
         <TextView
+            android:id="@+id/danger_level_insect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/level_danger"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+
+            android:layout_below="@+id/class_insect"
+            />
+        <TextView
             android:id="@+id/ad_insect"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/detail_danger"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
 
-            android:layout_below="@+id/class_insect"
+            android:layout_below="@+id/danger_level_insect"
             />
         <RatingBar
             android:id="@+id/danger_insect"

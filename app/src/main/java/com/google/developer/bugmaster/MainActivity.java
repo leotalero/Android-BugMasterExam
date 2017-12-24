@@ -1,38 +1,31 @@
 package com.google.developer.bugmaster;
 
-import android.content.AsyncTaskLoader;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
-import android.net.Uri;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.LoaderManager;
-import android.support.v4.content.CursorLoader;
 import android.support.v4.content.Loader;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.amitshekhar.DebugDB;
 import com.google.developer.bugmaster.data.DatabaseManager;
 import com.google.developer.bugmaster.data.Insect;
 import com.google.developer.bugmaster.data.InsectRecyclerAdapter;
 import com.google.gson.Gson;
 
-import org.json.JSONException;
-
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+
+//import com.amitshekhar.DebugDB;
 
 public class MainActivity extends AppCompatActivity implements
         View.OnClickListener,
@@ -55,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        DebugDB.getAddressLog();
+        //DebugDB.getAddressLog();
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -172,7 +165,7 @@ public class MainActivity extends AppCompatActivity implements
         if(data!=null){
             adapter.swapCursor(data);
             randomInsect(data);
-            SharedPreferences sharedPref = this.getSharedPreferences("preferences",this.MODE_PRIVATE);
+            SharedPreferences sharedPref = this.getSharedPreferences("preferences", MODE_PRIVATE);
             SharedPreferences.Editor editor = sharedPref.edit();
             String json = randomList == null ? null : new Gson().toJson(randomList);
 

@@ -10,8 +10,6 @@ import com.google.developer.bugmaster.views.AnswerView;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.google.developer.bugmaster.MainActivity.shuffleList;
-
 public class QuizActivity extends AppCompatActivity implements
         AnswerView.OnAnswerSelectedListener {
     private static final String TAG = QuizActivity.class.getSimpleName();
