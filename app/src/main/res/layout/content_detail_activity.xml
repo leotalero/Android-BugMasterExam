@@ -18,7 +18,7 @@
             android:id="@+id/class_insect"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Classification "
+            android:text="@string/classification"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
