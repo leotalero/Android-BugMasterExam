@@ -99,8 +99,7 @@ public class MainActivity extends AppCompatActivity implements
                 }else{
                     sortOrder=NAME_SORT;
                 }
-                //Cursor cursor=databaseManager.queryAllInsects(sortOrder);
-                //adapter.notifyDataSetChanged();
+
                 getSupportLoaderManager().initLoader(1, null, this).forceLoad();
 
                 return true;

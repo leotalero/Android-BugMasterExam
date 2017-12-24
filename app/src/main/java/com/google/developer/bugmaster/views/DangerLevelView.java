@@ -38,6 +38,10 @@ public class DangerLevelView extends TextView {
 
         String color = colors[dangerLevel-1];
         setSolidColor(color);
+        String value = getResources().getStringArray(R.array.dangerColors)[dangerLevel-1];
+        int a=Color.parseColor(value);
+
+       // setBackgroundColor(a);
     }
 
     public int getDangerLevel() {

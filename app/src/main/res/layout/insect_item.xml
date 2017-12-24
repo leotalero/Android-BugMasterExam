@@ -16,7 +16,8 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_centerVertical="true"
-        android:textColor="#FFFFFF"/>
+        android:textColor="#FFFFFF"
+        />
     <TextView
         android:id="@+id/name_insect"
         android:layout_width="fill_parent"

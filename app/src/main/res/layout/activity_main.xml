@@ -34,6 +34,7 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/activity_horizontal_margin"
         android:src="@drawable/ic_av_timer"
-        android:onClick="onClick"/>
+        android:onClick="onClick"
+        app:rippleColor="@color/colorAccent"/>
 
 </android.support.design.widget.CoordinatorLayout>
